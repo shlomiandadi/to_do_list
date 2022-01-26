@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+::selection{
+  color: #ffff;
+  background: #6149E8;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  background-image: url(/first_Project_Js_shlomi_malfuf/images/rm222batch5-kul-18.jpg ) ;
+  
+}
+.Taskboard{
+  background: rgba(164, 253, 220, 0.274);
+  max-width: 900px;
+  width: 100%;
+  margin: 120px auto;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+.Taskboard header{
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+.bi-list-task{
+  margin-top: 10px;
+}
+.Taskboard .AllInput{
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  height: 45px;
+}
+h1{
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+hr:not([size]) {
+  height: 2px;
+  color: #6149E8;
+;}
+/* input date */
+.date{
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;}
+/* input time */
+.time{
+  text-align: center;}
+.AllInput input{
+  width: 45%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 17px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+}
+.AllInput input:focus{
+  border-color: #498ee8;
+}
+.AllInput button{
+  width: 50px;
+  height: 100%;
+  border: none;
+  color: #fff;
+  margin-left: 5px;
+  font-size: 21px;
+  outline: none;
+  background: #4981e8;
+  cursor: pointer;
+  border-radius: 3px;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.AllInput button:hover,
+.allTask button:hover{
+  background: #1c9ae3;
+}
+.AllInput button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+#clearBtn{
+  font-size: 16px;
+  padding-right: 15px;
+  border-right-width: 10px;
+  padding-left: 5px;
+  padding-right: 15px;
+  border-right-width: 10px;
+  padding-left: 5px;
+  background-color: #6149E8;
+}
+.Taskboard .todoList{
+  max-height: 250px;
+  overflow-y: auto;
+}
+.ulList{
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+
+}
+.todoList li{
+  position: relative;
+  list-style: none;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: default;
+  overflow: hidden;
+  word-wrap: break-word; 
+}
+.todoList li .icon{
+  height:100%;
+  position: absolute;
+  right: -45px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgb(231, 74, 60);
+  width: 45px;
+  text-align: center;
+  color: #fff;
+  padding: 35px 15px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.todoList li:hover .icon{
+  right: 0px;
+}
+
+.Taskboard .allTask{
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.allTask button{
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 5px;
+  background: #6149e8;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.allTask button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+svg{
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.footer{
+  text-align: center;
+  margin-top: 15%;
+}
